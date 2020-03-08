@@ -1,0 +1,17 @@
+#配置默认环境为dev
+spring:
+    profiles:
+        active: dev
+#使用---作为分割符
+---
+#配置dev环境
+spring:
+    profiles: dev
+    application:
+        name: config-dev
+---
+#配置test环境
+spring:
+    profiles: test
+    application:
+        name: config-test
