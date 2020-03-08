@@ -1,0 +1,16 @@
+#以下配置dev环境
+server:
+    port: 18086
+spring:
+    profiles: dev
+    application:
+        name: config-client-dev
+eureka:
+  client:
+    #声明为client端，并设置Eureka服务器端地址，并将client注册到该地址中
+    service-url:
+      defaultZone: http://eureka1.test.com:18080/eureka,http://eureka2.test.com:28080/eureka,http://eureka3.test.com:38080/eureka
+  instance:
+    instance-id: config-client-dev
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
