@@ -14,3 +14,5 @@ eureka:
     instance-id: config-client-dev
     prefer-ip-address: true
     ip-address: 127.0.0.1
+custom:
+    property: dev custom property
